@@ -11,15 +11,17 @@
  */
 int main(void)
 {
-int a;
-a = 0;
-while (a <= 8)
+int i;
+
+for (i = 0; i < 10; i++)
+{
+if (i > 0)
 	{
-putchar('0' + a);
-putchar(',');
-putchar(' ');
-a++;
+	putchar(',');
+	putchar(' ');
 	}
-	putchar('9');
+	putchar ('0' + i);
+	}
+	putchar('\n');
 	return (0);
 }
