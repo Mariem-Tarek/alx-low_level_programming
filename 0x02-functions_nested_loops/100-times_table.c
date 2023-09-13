@@ -23,6 +23,7 @@ for (j = 1 ; j <= n ; j++)
 {
 putchar(',');
 putchar(' ');
+putchar(' ');
 res = i * j;
 if (res > 9)
 {
