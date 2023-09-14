@@ -30,7 +30,10 @@ putchar(' ');
 else
 {
 printf("%d", i);
+if (i != 100)
 putchar(' ');
+else
+printf("\n");
 }
 }
 return (0);
