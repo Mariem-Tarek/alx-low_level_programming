@@ -15,4 +15,5 @@ void times_table(void);
 int add(int, int);
 void print_times_table(int n);
 int _isupper(int c);
+int _isdigit(int c);
 #endif
