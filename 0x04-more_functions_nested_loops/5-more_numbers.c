@@ -3,7 +3,7 @@
 /**
  * more_numbers - function prints
  *
- * Return: no return
+ * Return: always 0 
  */
 void more_numbers(void)
 {
