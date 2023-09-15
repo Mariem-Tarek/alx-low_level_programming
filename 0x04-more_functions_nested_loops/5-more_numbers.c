@@ -3,7 +3,7 @@
 /**
  * more_numbers - function prints
  *
- * Return: always 0 
+ * Return: always 0
  */
 void more_numbers(void)
 {
@@ -14,6 +14,7 @@ for (j = 0; j < 10; j++)
 int i;
 for (i = 0; i <= 14; i++)
 {
+num = i;
 if (i > 9)
 {
 _putchar('1');
