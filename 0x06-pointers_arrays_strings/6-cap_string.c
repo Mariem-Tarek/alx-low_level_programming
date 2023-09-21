@@ -16,6 +16,10 @@ if (*n >= 'a' && *n <= 'z')
 {
 *n = *n - 32;
 }
+else if (*n == '\t')
+{
+*n = ' ';
+}
 n++;
 }
 return (original);
