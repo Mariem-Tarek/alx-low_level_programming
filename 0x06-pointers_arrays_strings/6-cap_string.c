@@ -9,18 +9,27 @@
 */
 char *cap_string(char *n)
 {
-char *original = n;
-while (*n != '\0')
+int index = 0;
+while (n[index])
 {
-if (*n >= 'a' && *n <= 'z')
-{
-*n = *n - 32;
+while (!(n[index] >= 'a' && n[index] <= 'z'))
+index++;
+if (n[index - 1] == ' ' ||
+n[index - 1] == '\t' ||
+n[index - 1] == '\n' ||
+n[index - 1] == ',' ||
+n[index - 1] == ';' ||
+n[index - 1] == '.' ||
+n[index - 1] == '!' ||
+n[index - 1] == '?' ||
+n[index - 1] == '"' ||
+n[index - 1] == '(' ||
+n[index - 1] == ')' ||
+n[index - 1] == '{' ||
+n[index - 1] == '}' ||
+index == 0)
+n[index] -= 32;
+index++;
 }
-else if (*n == '\t')
-{
-*n = ' ';
-}
-n++;
-}
-return (original);
+return (n);
 }
