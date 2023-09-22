@@ -4,24 +4,25 @@
 * leet - a new function
 *
 * @n : int prametar
-* 
+*
 * Return: N
 */
 char *leet(char *n)
 {
-int i , j;
-char s1[] = "aAeEoOtTlL";
-char s2[] = "4433007711";
-for (i = 0; n[i] != '\0'; i++)
+char *cp = n;
+char key[] = {'A', 'E', 'O', 'T', 'L'};
+int value[] = {4, 3, 0, 7, 1};
+unsigned int i;
+while (*n)
 {
-for (j = 0; j < 10;j++)
+for (i = 0; i < sizeof(key) / sizeof(char); i++)
 {
-if(n[i] == s1[j])
+if (*n == key[i] || *n == key[i] + 32)
 {
-n[i] = s2[j];
+*n = 48 + value[i];
 }
 }
+n++;
 }
-return (n);
+return (cp);
 }
-
