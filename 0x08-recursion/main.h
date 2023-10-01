@@ -58,4 +58,10 @@ int _sqrt(int a, int b);
 int is_prime_number(int n);
 int _prime(int a, int b);
 void _print_rev_recursion(char *s);
+int is_palindrome(char *s);
+int _strlen_recursion(char *s);
+int compare_string(char *s, int left, int right);
+int is_palindrome(char *s);
+
+
 #endif
