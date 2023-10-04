@@ -63,5 +63,6 @@ int _strlen_recursion(char *s);
 int compare_string(char *s, int left, int right);
 int is_palindrome(char *s);
 char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
 
 #endif
