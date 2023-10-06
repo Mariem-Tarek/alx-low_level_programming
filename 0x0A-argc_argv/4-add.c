@@ -9,37 +9,23 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-int sum;
-int i;
-int count;
-count = 0;
+int sum = 0;
+char *c;
 
-if (argc == 1)
+while (--argc)
 {
-printf("%d\n", 0);
-}
-else
+for (c = argv[argc]; *c; c++)
 {
-for (i = 1; i < argc; i++)
-{
-if (*argv[i] >= '0' || *argv[i] <= '9')
-{
-sum += atoi(argv[i]);
-}
-else
-{
-printf("Error");
-count++;
-break;
+
+if (*c < '0' || *c > '9')
+return (printf("Error\n"), 1);
+
+sum += atoi(argv[argc]);
 }
 }
-if (count == 0)
-{
 printf("%d\n", sum);
-}
-}
 return (0);
 }
 
