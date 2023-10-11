@@ -62,5 +62,6 @@ int is_palindrome(char *s);
 int _strlen_recursion(char *s);
 int compare_string(char *s, int left, int right);
 int is_palindrome(char *s);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
